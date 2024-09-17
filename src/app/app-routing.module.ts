@@ -12,6 +12,7 @@ import { TimetableComponent } from './timetable/timetable.component';
 import { LogisticsComponent } from './logistics/logistics.component';
 import { BussearchComponent } from './bussearch/bussearch.component';
 import { TicketserviceComponent } from './ticketservice/ticketservice.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   //EACH ROUTE OBJECT IS A COMBINATION OF PATH AND COMPONENT.
@@ -28,7 +29,9 @@ const routes: Routes = [
   {path:"timetable",component:TimetableComponent},
   {path:"logistics",component:LogisticsComponent},
   {path:"bussearch",component:BussearchComponent},
-  {path:"",component:HomeComponent}  
+  {path:"",component:HomeComponent},
+    // Wildcard route
+  { path: '**', component: NotFoundComponent }    
 ];
 
 @NgModule({

@@ -15,6 +15,7 @@ import { WalletComponent } from './wallet/wallet.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { LogisticsComponent } from './logistics/logistics.component';
 import { BussearchComponent } from './bussearch/bussearch.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { BussearchComponent } from './bussearch/bussearch.component';
     WalletComponent,
     TimetableComponent,
     LogisticsComponent,
-    BussearchComponent
+    BussearchComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
